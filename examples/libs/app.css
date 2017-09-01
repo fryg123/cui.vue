@@ -1,0 +1,420 @@
+@charset "UTF-8";
+/*变量*/
+/*Theme*/
+/*开始*/
+.theme-default .brand {
+  background-color: #4cb6cb;
+}
+
+.theme-default .brand {
+  color: #FFF;
+}
+
+.theme-default .header {
+  background-color: #FFF;
+}
+
+.theme-default .header > .am-nav a,
+.theme-default .header > .am-nav .search > i {
+  color: #939aa0;
+}
+
+.theme-default .header > .am-nav li > a:hover,
+.theme-default .header > .am-nav li > a:focus,
+.theme-default .header > .am-nav > li.am-active > a,
+.theme-default .header > .am-nav > li.am-active > a:hover,
+.theme-default .header > .am-nav > li.am-active > a:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.theme-default aside,
+.theme-default .control-sidebar {
+  background-color: #303437;
+}
+
+.theme-default .nav li a {
+  color: #c1d1dc;
+}
+
+.theme-default .nav li a:hover,
+.theme-default .nav li a:active,
+.theme-default .nav li.active > a {
+  color: #FFF;
+}
+
+.theme-default .nav > ul > li.active > a,
+.theme-default .nav > ul > li.active > a:hover,
+.theme-default .nav > ul > li.active > a:active,
+.theme-default .nav > ul > li > a:hover,
+.theme-default .nav > ul > li > a:active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #4cb6cb;
+}
+
+.theme-default .control-sidebar .am-nav-tabs > li > a {
+  color: #c1d1dc;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-default .control-sidebar .am-nav-tabs > li > a:hover,
+.theme-default .control-sidebar .am-nav-tabs > li > a:active,
+.theme-default .control-sidebar .am-nav-tabs > li > a:focus,
+.theme-default .control-sidebar .am-nav-tabs > li.am-active > a {
+  color: #FFF;
+  background-color: #303437;
+}
+
+.theme-default .control-sidebar .am-tabs-bd {
+  color: #FFF;
+}
+
+.theme-default .control-sidebar .am-tabs-bd .am-nav > li > a {
+  color: #c1d1dc;
+  background-color: #303437;
+}
+
+.theme-default .control-sidebar .am-tabs-bd .am-nav > li > a:hover,
+.theme-default .control-sidebar .am-tabs-bd .am-nav > li > a:active,
+.theme-default .control-sidebar .am-tabs-bd .am-nav > li > a:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*Common*/
+html,
+body {
+  background-color: #f2f4f8;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+div,
+a,
+table,
+span,
+em {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", 'Source Sans Pro', "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+.console,
+.console body {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+.hbox {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.hbox > aside,
+.hbox > section {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+  float: none;
+}
+
+.vbox {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vbox > .row {
+  display: table-row;
+  vertical-align: top;
+  height: 100%;
+  float: none;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.hbox.stretch {
+  height: 100%;
+}
+
+.aside {
+  width: 200px;
+}
+
+/*头部*/
+.header {
+  position: relative;
+  z-index: 1000;
+  min-height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.header .search {
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+.header .search > i {
+  margin-right: 10px;
+}
+
+.header .search input {
+  border: 0;
+  outline: 0;
+  height: 30px;
+  line-height: 30px;
+  margin-top: -5px;
+}
+
+.header .am-dropdown-content {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .brand {
+  float: left;
+  position: relative;
+}
+
+.header .brand > .am-btn {
+  position: absolute;
+  font-size: 1.3em;
+  padding: 9px 16px;
+  line-height: 30px;
+  left: 0;
+  text-decoration: none;
+}
+
+.header .brand > .title {
+  display: inline-block;
+  float: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  height: auto;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+.header .brand > .title img {
+  max-height: 30px;
+  max-width: 30px;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+.header a {
+  color: #ffffff;
+}
+
+.header .user .photo {
+  width: 40px;
+  display: inline-block;
+  position: relative;
+  margin: -10px 0 0 10px;
+}
+
+.header .user .photo img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.header > .am-nav {
+  float: left;
+  margin: 0;
+  padding-left: 0;
+}
+
+.header > .am-nav li {
+  float: left;
+  display: block;
+  position: relative;
+}
+
+.header > .am-nav > li + li {
+  margin-top: 0;
+}
+
+.header > .am-nav .am-dropdown-content li {
+  float: none;
+}
+
+.header > .am-nav .am-dropdown-content li a {
+  padding: 5px 15px;
+  clear: both;
+  line-height: 20px;
+  color: #333;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.header > .am-nav .am-dropdown-content li a .time {
+  color: #939aa0;
+  font-size: 12px;
+}
+
+.header > .am-nav.am-fr {
+  float: right;
+}
+
+.header > .am-nav a {
+  padding: 20px;
+  line-height: 20px;
+}
+
+.header > .am-nav .item-feed-badge {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+}
+
+/*****左侧导航菜单******/
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav ul li {
+  position: relative;
+  display: block;
+}
+
+.nav ul li ul {
+  display: none;
+  margin-left: 10px;
+}
+
+.nav ul li > a {
+  border-left: 3px solid transparent;
+  display: block;
+  padding: 0 20px 0 17px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  transition: background-color .3s ease-in-out 0s;
+}
+
+.nav ul li > a > i {
+  margin-right: 10px;
+}
+
+.nav ul li > a > span {
+  float: right;
+  margin-right: 5px;
+}
+
+.nav ul li > a > span:before {
+  content: "\f104";
+}
+
+.nav ul li.active > ul {
+  display: block;
+}
+
+.nav ul li.active > a > span::before {
+  content: "\f107";
+}
+
+/*******内容页********/
+.content .menu {
+  height: 40px;
+  line-height: 40px;
+}
+
+.content .menu .am-breadcrumb {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.content .page {
+  padding: 0 0 0 10px;
+}
+
+/******右侧设置*******/
+.control-sidebar {
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: -200px;
+  transition: right .5s ease-in-out;
+  padding-top: 60px;
+}
+
+.control-sidebar .am-tabs .am-nav-tabs {
+  display: table;
+  width: 100%;
+  border: 0;
+}
+
+.control-sidebar .am-tabs .am-nav-tabs > li {
+  display: table-cell;
+  text-align: center;
+  float: none;
+  margin: 0;
+}
+
+.control-sidebar .am-tabs .am-nav-tabs > li > a:hover {
+  border: 0;
+}
+
+.control-sidebar .am-tabs .am-nav-tabs > li > a {
+  margin: 0;
+  border: 0;
+}
+
+.control-sidebar .am-tabs .am-tabs-bd {
+  border: 0;
+}
+
+.control-sidebar .am-tabs .am-tabs-bd .am-tab-panel {
+  padding: 0;
+}
+
+.control-sidebar .am-tabs .am-tabs-bd h3 {
+  margin: 15px 10px 10px 15px;
+  font-weight: normal;
+}
+
+.control-sidebar .am-tabs .am-tabs-bd .am-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.control-sidebar .am-tabs .am-tabs-bd .am-nav > li > a {
+  padding: 0.4em 1.2em;
+}
+
+.control-sidebar .am-tabs .am-tabs-bd .am-nav > li > a i {
+  margin-right: 5px;
+}
+
+.control-sidebar.open {
+  right: 0;
+}
+ 
+
+ /*# sourceMappingURL= app.css.map */
